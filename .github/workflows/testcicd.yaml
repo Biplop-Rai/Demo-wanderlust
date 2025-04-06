@@ -42,5 +42,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY }}
-        source: "docker-compose.yaml"
+        source: "./docker-compose.yaml"
         target: /home/aws-ec2-user/docker-compose.yaml 
