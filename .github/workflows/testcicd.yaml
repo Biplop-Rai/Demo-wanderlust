@@ -33,7 +33,7 @@ jobs:
           tags: biploprai/backend-jenkins:test-branch
 
   Docker-compose-transfer:
-  runs-on: ubuntu-latest
+  
   steps:
     - name: Checkout code
       uses: actions/checkout@v3
