@@ -33,6 +33,8 @@ jobs:
           tags: biploprai/backend-jenkins:test-branch
 
   Docker-compose-transfer:
+    runs-on: ubuntu-latest
+    steps:
     - name: copy file via ssh key
       uses: appleboy/scp-action@v0.1.7
       with:
