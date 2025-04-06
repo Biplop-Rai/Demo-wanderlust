@@ -27,6 +27,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./backend/
-          file: ./backend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/backend-jenkins:test-branch
