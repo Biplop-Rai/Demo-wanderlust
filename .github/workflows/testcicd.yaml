@@ -35,12 +35,12 @@ jobs:
   Docker-compose-transfer:
 
   steps:
-    - name: Debug - List files
-      run: |
-        echo "Current directory:"
-        pwd
-        echo "Listing files:"
-        ls -alh
+    # - name: Debug - List files
+    #   run: |
+    #     echo "Current directory:"
+    #     pwd
+    #     echo "Listing files:"
+    #     ls -alh
 
     - name: copy file via ssh key
       uses: appleboy/scp-action@v0.1.7
