@@ -32,6 +32,7 @@ jobs:
           push: true
           tags: biploprai/backend-jenkins:test-branch
 
+
   Docker-compose-transfer:
     runs-on: ubuntu-latest
     steps:
@@ -43,4 +44,4 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY }}
         source: "docker-compose.yaml"
-        target: "/home/aws-ec2-user/docker-compose.yaml"
+        target: "/home/ubuntu/docker-compose.yaml"
